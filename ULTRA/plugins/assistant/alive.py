@@ -15,13 +15,13 @@ from ULTRAX import PHOTO, xbot, BOT, VERSION
 from ULTRA import bot
 @xbot.on(events.NewMessage(pattern=("/alive")))
 async def awake(event):
-  LEGENDX = f"Hᴇʟʟᴏ !! Tʜɪs ɪs **{BOT}**\n\n"
-  LEGENDX += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...**\n\n"
-  LEGENDX += f"**{BOT} Vᴇʀsɪᴏɴ** : `{VERSION}`\n\n"
-  LEGENDX += f"**Usᴇʀ** : @{bot.me.username}\n\n"
-  LEGENDX += "**Fᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ ʙᴏᴛ...**\n\n"
-  LEGENDX += "**Tᴇʟᴇᴛʜᴏɴ** : `1.20`\n\n"
-  LEGENDX += "~~ **Tʜᴀɴᴋs ғᴏʀ ᴄʜᴇᴄᴋɪɴɢ ᴍᴇ** !!"
+  LEGENDX = f"➥ Hᴇʟʟᴏ !! Tʜɪs ɪs **{BOT}**\n\n"
+  LEGENDX += "**➥ Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...**\n\n"
+  LEGENDX += f"**➥ {BOT} Vᴇʀsɪᴏɴ** : `{VERSION}`\n\n"
+  LEGENDX += f"**➥ Usᴇʀ** : @{bot.me.username}\n\n"
+  LEGENDX += "**➥ Fᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ ʙᴏᴛ...**\n\n"
+  LEGENDX += "**➥ Tᴇʟᴇᴛʜᴏɴ** : `1.20`\n\n"
+  LEGENDX += "~~ **➥ Tʜᴀɴᴋs ғᴏʀ ᴄʜᴇᴄᴋɪɴɢ ᴍᴇ** !!"
   BUTTON = [[Button.url("Mᴀsᴛᴇʀ", f"https://t.me/{bot.me.username}"), Button.url(f"{BOT} Rᴇᴘᴏ", "https://github.com/ULTRA-OP/ULTRA-X")]]
   BUTTON += [[custom.Button.inline("Rᴇᴘᴏsɪᴛᴏʀɪᴇs »»", data="LEGENDX")]]
   await xbot.send_file(event.chat_id, PHOTO, caption=LEGENDX,  buttons=BUTTON)
@@ -101,7 +101,7 @@ async def ok(event):
     telegram_ping = str(round(pingtime.total_seconds(), 2)) + "s"
     uptime = get_readable_time((time.time() - StartTime))
     await message.edit(
-        "<b><i>☞ Pᴏɴɢ !!</i></b>\n"
+        "<b><i>➥ Pᴏɴɢ !!</i></b>\n"
         "<b>➥ Tɪᴍᴇ Tᴀᴋᴇɴ:</b> <code>{}</code>\n"
         "<b>➥ Sᴇʀᴠɪᴄᴇ Uᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode="html",
